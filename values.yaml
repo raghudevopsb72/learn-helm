@@ -88,6 +88,6 @@ ports:
  - 80
  - 8080
 env:
-  - url: google.com
-  - domain: .com
+  url: google.com
+  domain: .com
 
