@@ -87,4 +87,7 @@ open_port: false
 ports:
  - 80
  - 8080
+env:
+  - url: google.com
+  - domain: .com
 
