@@ -12,7 +12,7 @@ spec:
       {{- end }}
 
       env:
-      {{- range .Values.ports }}
-      - name: {{ .key }}
+      {{- range $k, $v := .Values.env }}
+      - name: {{ $k }}
       {{- end }}
 
