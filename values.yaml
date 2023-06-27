@@ -83,5 +83,7 @@ affinity: {}
 
 podName: httpd
 image_name: httpd
-open_port: false 
+open_port: false
+ports:
+ - 80
 
