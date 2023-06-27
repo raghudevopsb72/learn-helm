@@ -90,4 +90,9 @@ ports:
 env:
   url: google.com
   domain: .com
+labels:
+  app: nginx
+  version: 1.17
+  maker: nginx
+  type: opensource
 
