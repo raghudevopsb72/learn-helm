@@ -3,7 +3,9 @@ kind: Pod
 metadata:
   name: {{ .Values.podName }}
   labels:
-{{ include "toYaml" .Values.labels | indent 2 }}
+{{- with .Values.labels }}
+{{- toYaml . | nindent 4 }}
+{{- end }}
 spec:
   containers:
     - name: nginx
